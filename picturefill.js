@@ -39,9 +39,9 @@
 				}
 
 				picImg.src =  matchedEl.getAttribute( "data-src" );
+				picImg.width = matchedEl.getAttribute( "data-width" );
+                                picImg.height = matchedEl.getAttribute( "data-height" );
 				matchedEl.appendChild( picImg );
-				picImg.removeAttribute("width");
-				picImg.removeAttribute("height");
 			}
 			else if( picImg ){
 				picImg.parentNode.removeChild( picImg );
